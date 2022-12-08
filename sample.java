@@ -1,19 +1,46 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="smartStyle.css">
-</head>
-<body>
-    <div class="header"></div>
-    <div class="main clearfix">
-        <div class="left"></div>
-        <div class="right"></div>
-    </div>
-    <div class="footer"></div>
-</body>
-</html>
+.clearfix::after { 
+    content: '';
+    display: block; 
+    clear: both;
+}
+
+
+
+
+.header {
+    width: 400px;
+    height: 100px;
+    background-color: #141f40;margin: 0px;
+}
+/*
+.main {
+    width: 400px;
+    height: 100px;
+    background-color: #d98d30;
+}
+*/
+
+.left {
+    width: 150px;
+    height: 250px;
+    background-color: #80bfa8;margin: 0px;
+    float: left;
+}
+
+.right {
+    width: 250px;
+    height: 250px;
+    background-color: #8c2727;margin: 0px;
+    float: left;
+}
+
+.footer {
+    width: 400px;
+    height: 100px;
+    background-color: #d98d30;margin: 0px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
