@@ -22,8 +22,8 @@
     .footer {
         width: 150px;
     }
+    .contents {
+        float: none;
+    }
 }
 
-.contents {
-    float: none;
-}
